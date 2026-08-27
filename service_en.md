@@ -1,10 +1,10 @@
-# Cutora Terms of Service
+# Cutano Terms of Service
 
 **Last Updated: July 31, 2026**
 
 **Effective Date: July 31, 2026**
 
-These Terms of Service ("Terms," "Agreement") constitute a legally binding agreement between you ("User," "you," or "your") and the developer of Cutora ("we," "us," "our," or "Developer") governing your access to and use of the Cutora application ("App") and all related services.
+These Terms of Service ("Terms," "Agreement") constitute a legally binding agreement between you ("User," "you," or "your") and the developer of Cutano ("we," "us," "our," or "Developer") governing your access to and use of the Cutano application ("App") and all related services.
 
 **BY DOWNLOADING, INSTALLING, ACCESSING, OR USING THE APP, YOU AGREE TO BE BOUND BY THESE TERMS IN THEIR ENTIRETY. IF YOU DO NOT AGREE TO ANY PART OF THESE TERMS, YOU MUST NOT USE THE APP.**
 
@@ -16,7 +16,7 @@ These Terms of Service ("Terms," "Agreement") constitute a legally binding agree
 
 ### 1.1 Overview
 
-Cutora is an iOS application that provides AI-powered photo cutout and editing tools, including:
+Cutano is an iOS application that provides AI-powered photo cutout and editing tools, including:
 
 - AI-powered subject extraction (background removal);
 - Background replacement;
@@ -259,7 +259,7 @@ For consumers in Japan:
 
 - **Premiums and Misleading Grants Act (景品表示法)**: All features described as "premium" or "included" are accurately represented. No exaggerated claims are made regarding the quality or performance of AI cutout results;
 - **Consumer Contract Act (消費者契約法) Article 4**: Our liability for damages caused by our willful misconduct or gross negligence cannot be limited. Where the Consumer Contract Act applies to damages other than those caused by willful misconduct or gross negligence, our liability shall be limited to the amount specified in Section 7(b);
-- **Act on Prevention and Thoroughfight against Outright Fraud (悪徳商質対策法) / Information Communications Business Providers Disclosure Requirements**: As an individual developer providing digital services remotely, we disclose: (a) the service provider is Cutora Developer (independent developer operating as an individual); (b) the method of payment is Apple In-App Purchase; (c) the price is as displayed on the App Store at time of purchase; (d) delivery of the service commences upon download and first use, with the user's prior consent obtained through acceptance of these Terms; (e) contact information: ppdd2012@outlook.com;
+- **Act on Prevention and Thoroughfight against Outright Fraud (悪徳商質対策法) / Information Communications Business Providers Disclosure Requirements**: As an individual developer providing digital services remotely, we disclose: (a) the service provider is Cutano Developer (independent developer operating as an individual); (b) the method of payment is Apple In-App Purchase; (c) the price is as displayed on the App Store at time of purchase; (d) delivery of the service commences upon download and first use, with the user's prior consent obtained through acceptance of these Terms; (e) contact information: ppdd2012@outlook.com;
 - **Cancellation right**: Under Japanese law, digital content delivered after user consent may lose the cooling-off right once performance has begun. By downloading and using the App, you confirm your consent to immediate commencement of service.
 
 ### 9.10 Singapore — Consumer Protection (Fair Trading Act 2003) (CPFTA)
@@ -276,7 +276,7 @@ For consumers in Singapore:
 For consumers in Thailand:
 
 - Under the Consumer Protection B.E. 2541 (1997), Thai consumers have the right to receive accurate and truthful information about goods and services, including digital services;
-- Under the Business with Consumers Act B.E. 2562 (2019), we disclose that: (a) the service provider is Cutora Developer (independent developer operating as an individual); (b) the service price is as displayed on the App Store at time of purchase; (c) the method of payment is through Apple In-App Purchase, with Apple Inc. acting as merchant of record; (d) the service commences upon download and acceptance of these Terms;
+- Under the Business with Consumers Act B.E. 2562 (2019), we disclose that: (a) the service provider is Cutano Developer (independent developer operating as an individual); (b) the service price is as displayed on the App Store at time of purchase; (c) the method of payment is through Apple In-App Purchase, with Apple Inc. acting as merchant of record; (d) the service commences upon download and acceptance of these Terms;
 - Thai consumers may file complaints with the Office of the Primary Consumer Protection Committee at www.ocpb.go.th or by calling 1166.
 
 ### 9.12 Vietnam — E-Commerce Law and Consumer Protection Regulations
@@ -396,4 +396,4 @@ If you have any questions about these Terms, please contact us:
 
 ---
 
-*© 2026 Cutora. All rights reserved.*
+*© 2026 Cutano. All rights reserved.*

@@ -1,18 +1,18 @@
-# Cutora Privacy Policy
+# Cutano Privacy Policy
 
 **Last Updated: July 31, 2026**
 
 **Effective Date: July 31, 2026**
 
-Cutora ("the App," "we," "us," or "our") is a photo cutout and editing application developed and operated by an individual developer. This Privacy Policy explains how we handle information in connection with your use of the App. It applies to all users worldwide, including users in the European Economic Area (EEA), United Kingdom, United States, Japan, South Korea, and Southeast Asian countries.
+Cutano ("the App," "we," "us," or "our") is a photo cutout and editing application developed and operated by an individual developer. This Privacy Policy explains how we handle information in connection with your use of the App. It applies to all users worldwide, including users in the European Economic Area (EEA), United Kingdom, United States, Japan, South Korea, and Southeast Asian countries.
 
-**By downloading, accessing, or using Cutora, you acknowledge that you have read and understood this Privacy Policy.**
+**By downloading, accessing, or using Cutano, you acknowledge that you have read and understood this Privacy Policy.**
 
 ---
 
 ## 1. Our Privacy Commitment: Local-First Architecture
 
-Cutora is designed with a **privacy-by-design** approach. The App's core image processing functionality — including AI-powered cutout, background replacement, batch processing, and ID photo creation — operates entirely through an **on-device AI model**. This means:
+Cutano is designed with a **privacy-by-design** approach. The App's core image processing functionality — including AI-powered cutout, background replacement, batch processing, and ID photo creation — operates entirely through an **on-device AI model**. This means:
 
 - All images you import and edit are processed **exclusively on your device**;
 - No images, photos, or editing data are ever uploaded to, transmitted to, or stored on any remote server;
@@ -55,7 +55,7 @@ The following data processing occurs locally on your device and never leaves you
 
 ## 5. Subscription and Payment Information
 
-Cutora offers a premium membership subscription through Apple's App Store and StoreKit framework.
+Cutano offers a premium membership subscription through Apple's App Store and StoreKit framework.
 
 - All payment transactions are processed entirely by **Apple Inc.** We do not receive, access, or store any payment information (credit card numbers, Apple ID credentials, billing addresses).
 - Apple's processing of your payment data is governed by Apple's Privacy Policy: https://www.apple.com/legal/privacy/
@@ -249,7 +249,7 @@ We may update this Privacy Policy from time to time. When we make material chang
 
 For users in the European Union, pursuant to the Digital Services Act (Regulation (EU) 2022/2065), we provide the following contact information:
 
-- **Service provider**: Cutora Developer (individual developer);
+- **Service provider**: Cutano Developer (individual developer);
 - **Contact email**: ppdd2012@outlook.com;
 - **Website**: https://cutora.cn;
 - **Merchant of record**: All subscription purchases are processed by Apple Inc., which acts as the independent trader for in-app purchase transactions. Billing-related inquiries should be directed to Apple's support channels.
