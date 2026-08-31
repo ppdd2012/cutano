@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF7A1A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background full-bleed square, sharp corners (iOS applies squircle mask) -->
+  <rect width="1024" height="1024" fill="url(#bg-grad)"/>
+  <!-- Orange leaf -->
+  <path d="M508 246 C512 206 548 192 566 202 C558 234 528 250 508 246 Z" fill="#FFFFFF"/>
+  <!-- Orange slice peel ring -->
+  <circle cx="512" cy="512" r="212" fill="none" stroke="#FFFFFF" stroke-width="26"/>
+  <!-- Flesh wedges with one wedge removed (the "cutout") -->
+  <g stroke="#FFFFFF" stroke-width="22" stroke-linecap="round">
+    <line x1="512" y1="512" x2="693" y2="512"/>
+    <line x1="512" y1="512" x2="640.3" y2="640.3"/>
+    <line x1="512" y1="512" x2="512" y2="693"/>
+    <line x1="512" y1="512" x2="383.7" y2="640.3"/>
+    <line x1="512" y1="512" x2="331" y2="512"/>
+    <line x1="512" y1="512" x2="383.7" y2="383.7"/>
+    <line x1="512" y1="512" x2="512" y2="331"/>
+  </g>
+  <!-- Four-pointed sparkle star -->
+  <path d="M748 256C752 278 762 286 784 292 762 298 752 306 748 328 744 306 734 298 712 292 734 286 744 278 748 256Z" fill="#FFFFFF" opacity="0.95"/>
+</svg>
