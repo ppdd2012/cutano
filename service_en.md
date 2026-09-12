@@ -24,7 +24,7 @@ Cutano is an iOS application that provides AI-powered photo cutout and editing t
 - Editing tools (erase/keep brushes, mask parameter adjustment, shadow and reflection effects);
 - Text overlay;
 - Batch cutout processing;
-- ID/passport photo creation.
+- Product showcase image creation.
 
 ### 1.2 On-Device Processing
 
@@ -176,7 +176,6 @@ THE APP AND ALL SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WIT
 ### 6.2 AI Output Accuracy
 
 - AI-powered cutout results depend on factors including image quality, background complexity, subject edge clarity, and lighting conditions. We do not guarantee perfect, accurate, or consistent results;
-- ID photo outputs are provided for convenience only. Users must independently verify compliance with the specifications of the relevant issuing authority (dimensions, background color, resolution, file format). We bear no responsibility for rejected applications, denied documents, or any consequences arising from non-compliant photos;
 - Batch processing results may vary across images. We do not guarantee uniformity of output;
 - **Commercial Use and Portrait Rights Risks**: Users who use processed images containing identifiable personal portraits for commercial purposes (including but not limited to advertising, product promotion, or commercial publishing) must ensure they have obtained explicit written authorization from the portrait rights holder. Unauthorized use of another person's portrait for commercial purposes may expose the user to heightened legal liability and damages. Users bear full responsibility for all legal consequences arising therefrom.
 

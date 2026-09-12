@@ -12,7 +12,7 @@ Cutano ("the App," "we," "us," or "our") is a photo cutout and editing applicati
 
 ## 1. Our Privacy Commitment: Local-First Architecture
 
-Cutano is designed with a **privacy-by-design** approach. The App's core image processing functionality — including AI-powered cutout, background replacement, batch processing, and ID photo creation — operates entirely through an **on-device AI model**. This means:
+Cutano is designed with a **privacy-by-design** approach. The App's core image processing functionality — including AI-powered cutout, background replacement, batch processing, and product showcase image creation — operates entirely through an **on-device AI model**. This means:
 
 - All images you import and edit are processed **exclusively on your device**;
 - No images, photos, or editing data are ever uploaded to, transmitted to, or stored on any remote server;
@@ -238,9 +238,8 @@ We may update this Privacy Policy from time to time. When we make material chang
 
 ## 18. Disclaimers and Limitation of Liability
 
-- The App's AI-powered cutout, background replacement, ID photo generation, and other editing features are provided **"as is"** and **"as available"** without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement;
+- The App's AI-powered cutout, background replacement, product showcase image generation, and other editing features are provided **"as is"** and **"as available"** without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement;
 - We do not guarantee that the output of AI processing will meet your specific requirements or expectations. Results are provided for creative and auxiliary purposes only;
-- **ID Photos**: Users are solely responsible for verifying that generated ID photos meet the specifications required by the relevant issuing authority (e.g., passport offices, visa application centers, government agencies). We bear no liability for rejected applications due to photo non-compliance;
 - **User Content**: You are solely responsible for ensuring that any images you import and process do not infringe upon the portrait rights, copyright, publicity rights, or other rights of third parties. We assume no liability for user-generated content or the manner in which you use the App's output;
 - **Device Compatibility**: We do not warrant that the App will function without interruption or error on all devices or operating system versions. We are not liable for data loss or functional issues arising from device incompatibility, operating system updates, or force majeure events;
 - To the maximum extent permitted by applicable law, our total aggregate liability for any claim arising from your use of the App shall not exceed the amount you paid for the App or subscription in the twelve (12) months preceding the claim.
