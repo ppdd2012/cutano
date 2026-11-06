@@ -211,7 +211,7 @@ footer .flinks a:hover{color:var(--orange)}
     </div>
     <div class="phone" data-reveal>
       <div class="screen">
-        <img id="hero-shot" src="shots/shot-cn.png" alt="Cutano 抠图完成界面 · Cutano cutout result screen">
+        <img id="hero-shot" src="shots/shot-cn.jpg" alt="Cutano 抠图完成界面 · Cutano cutout result screen">
       </div>
     </div>
   </div>
@@ -509,7 +509,7 @@ function applyLang(lang){
   document.getElementById('btn-zh').classList.toggle('on', lang === 'zh');
   document.getElementById('btn-en').classList.toggle('on', lang === 'en');
   const heroShot = document.getElementById('hero-shot');
-  if (heroShot) heroShot.src = lang === 'en' ? 'shots/shot-en.png' : 'shots/shot-cn.png';
+  if (heroShot) heroShot.src = lang === 'en' ? 'shots/shot-en.jpg' : 'shots/shot-cn.jpg';
   const dict = I18N[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const k = el.getAttribute('data-i18n');
