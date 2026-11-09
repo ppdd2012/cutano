@@ -3,23 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机</title>
+<title data-zh="橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机">Cutano — 100% On-Device AI Cutout for iPhone</title>
 <link rel="icon" type="image/svg+xml" href="icon.svg">
-<meta name="description" data-en="Cutano is a 100% on-device AI cutout app for iPhone. Fine-strand, hair-level matting powered by Core ML + Metal GPU, with a studio-grade workflow — layers, multi-cutout editing, AI shadows &amp; reflections. Your photos are never uploaded to any server." content="橙子抠图 (Cutano) 是一款 100% 本地运行的 iPhone AI 抠图应用。Core ML + Metal GPU 带来发丝级精细抠图，并具备图层管理、多次抠图编辑、AI 阴影倒影等工作室级后期能力——照片绝不上传任何服务器。">
-<meta name="keywords" content="橙子抠图,Cutano,AI抠图,iOS抠图,本地抠图,图层管理,模型切换,AI阴影,背景替换,商品展示图,批量抠图,Core ML,隐私安全,photo cutout,on-device">
+<meta name="description" data-en="Cutano is a 100% on-device AI cutout app for iPhone. Fine-strand, hair-level matting powered by Core ML + Metal GPU, with a studio-grade workflow — layers, multi-cutout editing, AI shadows &amp; reflections. Your photos are never uploaded to any server." data-zh="橙子抠图 (Cutano) 是一款 100% 本地运行的 iPhone AI 抠图应用。Core ML + Metal GPU 带来发丝级精细抠图，并具备图层管理、多次抠图编辑、AI 阴影倒影等工作室级后期能力——照片绝不上传任何服务器。" content="Cutano is a 100% on-device AI cutout app for iPhone. Fine-strand, hair-level matting powered by Core ML + Metal GPU, with a studio-grade workflow — layers, multi-cutout editing, AI shadows &amp; reflections. Your photos are never uploaded to any server.">
+<meta name="keywords" content="Cutano,AI cutout,photo cutout,on-device matting,iOS cutout app,Core ML,background removal,hair matting,layer management,PSD export,privacy">
 <meta name="author" content="Cutano">
-<link rel="canonical" href="https://cutora.cn/cutano/">
+<link rel="canonical" href="https://ppdd2012.github.io/cutano/">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" data-en="Cutano — 100% On-Device AI Cutout for iPhone" content="橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机">
-<meta property="og:description" data-en="Hair-level AI cutout that runs 100% on your iPhone. Fine-strand matting with a studio-grade workflow — layers, AI shadows, layered PSD export — and your photos are never uploaded to any server. Private by architecture." content="在你 iPhone 上 100% 本地运行的发丝级 AI 抠图。精细发丝抠图 + 工作室级后期工作流——图层管理、AI 阴影、分层 PSD 导出——照片绝不上传任何服务器，隐私由架构保证。">
-<meta property="og:url" content="https://cutora.cn/cutano/">
-<meta property="og:site_name" content="Cutano 橙子抠图">
-<meta property="og:image" content="https://cutora.cn/cutano/icon.svg">
+<meta property="og:url" content="https://ppdd2012.github.io/cutano/">
+<meta property="og:title" data-en="Cutano — 100% On-Device AI Cutout for iPhone" data-zh="橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机" content="Cutano — 100% On-Device AI Cutout for iPhone">
+<meta property="og:description" data-en="Hair-level AI cutout that runs 100% on your iPhone. Fine-strand matting with a studio-grade workflow — layers, AI shadows, layered PSD export — and your photos are never uploaded to any server. Private by architecture." data-zh="在你 iPhone 上 100% 本地运行的发丝级 AI 抠图。精细发丝抠图 + 工作室级后期工作流——图层管理、AI 阴影、分层 PSD 导出——照片绝不上传任何服务器，隐私由架构保证。" content="Hair-level AI cutout that runs 100% on your iPhone. Fine-strand matting with a studio-grade workflow — layers, AI shadows, layered PSD export — and your photos are never uploaded to any server. Private by architecture.">
+<meta property="og:site_name" data-en="Cutano" data-zh="Cutano 橙子抠图" content="Cutano">
+<meta property="og:locale" data-en="en_US" data-zh="zh_CN" content="en_US">
+<meta property="og:image" content="https://ppdd2012.github.io/cutano/icon.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="橙子抠图 Cutano — 100% 本地 AI 抠图">
-<meta name="twitter:description" content="发丝级 AI 抠图 · 100% 本地运行 · 图层 / AI 阴影 / 分层 PSD —— 照片绝不上传，隐私由架构保证。">
+<meta name="twitter:title" data-en="Cutano — 100% On-Device AI Cutout" data-zh="橙子抠图 Cutano — 100% 本地 AI 抠图" content="Cutano — 100% On-Device AI Cutout">
+<meta name="twitter:description" data-en="Hair-level AI cutout · 100% on-device · layers / AI shadows / layered PSD — photos never uploaded, privacy by architecture." data-zh="发丝级 AI 抠图 · 100% 本地运行 · 图层 / AI 阴影 / 分层 PSD —— 照片绝不上传，隐私由架构保证。" content="Hair-level AI cutout · 100% on-device · layers / AI shadows / layered PSD — photos never uploaded, privacy by architecture.">
+<meta name="twitter:image" content="https://ppdd2012.github.io/cutano/icon.jpg">
 <style>
 :root{
   --bg:#0b0b10; --bg2:#101018; --panel:rgba(255,255,255,.045);
@@ -144,13 +148,15 @@ details .a{margin-top:12px;color:var(--tx2);font-size:.93em}
 
 /* ── 限时促销 ── */
 .promo{display:inline-flex;align-items:center;gap:9px;margin-top:18px;padding:9px 17px;border-radius:99px;border:1px solid rgba(255,140,60,.45);background:linear-gradient(100deg,rgba(255,179,92,.15),rgba(255,107,26,.06));font-size:.88em;font-weight:600;color:var(--tx)}
-.promo b{color:var(--orange);font-weight:800}
+.promo b{color:var(--orange);font-weight:800;font-size:1.5em;letter-spacing:.2px;line-height:1}
+.promo>span{display:inline-flex;align-items:center}
 .promo i{display:block;font-style:normal;width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 10px var(--orange);animation:pulse 1.8s ease-in-out infinite;flex:none}
 .promo-note{margin-top:9px;font-size:.76em;color:var(--tx3)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* ── Legal & Footer ── */
-.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+@media (max-width:760px){.legal-grid{grid-template-columns:1fr}}
 .legal-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
 .legal-card h3{font-size:1.02em;margin-bottom:12px}
 .legal-card a{color:var(--orange);font-weight:500;font-size:.92em;margin-right:18px}
@@ -186,20 +192,20 @@ footer .flinks a:hover{color:var(--orange)}
 
 <nav>
   <div class="nav-inner">
-    <a class="brand" href="#"><img src="icon.svg" alt="Cutano icon"><span>Cutano <span class="grad-text" data-i18n-html="brand_cn">橙子抠图</span></span></a>
+    <a class="brand" href="#"><img src="icon.svg" alt="Cutano icon"><span>Cutano <span class="grad-text" data-i18n-html="brand_cn"></span></span></a>
     <div class="nav-links">
-      <a href="#features" data-i18n="nav_features">功能</a>
-      <a href="#privacy" data-i18n="nav_privacy">隐私</a>
-      <a href="#tech" data-i18n="nav_tech">技术</a>
-      <a href="#faq" data-i18n="nav_faq">常见问题</a>
-      <a href="#legal" data-i18n="nav_legal">法律条款</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#privacy" data-i18n="nav_privacy">Privacy</a>
+      <a href="#tech" data-i18n="nav_tech">Tech</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#legal" data-i18n="nav_legal">Legal</a>
     </div>
     <div class="nav-cta">
       <div class="lang-toggle" role="group" aria-label="Language">
         <button id="btn-zh" onclick="setLang('zh')">中文</button>
         <button id="btn-en" class="on" onclick="setLang('en')">EN</button>
       </div>
-      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="nav_download">下载</a>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="nav_download">Get the App</a>
     </div>
   </div>
 </nav>
@@ -208,24 +214,24 @@ footer .flinks a:hover{color:var(--orange)}
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1><span data-i18n="hero_t1">工作室级 AI 抠图，</span><br><span class="grad-text" data-i18n="hero_t2">100% 在你的 iPhone 上完成</span></h1>
-      <p class="lead" data-i18n="hero_lead">Core ML 驱动的抠图引擎与 Metal GPU 后处理，带来发丝级精度——同时你的照片从不离开设备。无云端、无上传、无账号。</p>
+      <h1><span data-i18n="hero_t1">Studio-grade AI cutout,</span><br><span class="grad-text" data-i18n="hero_t2">100% on your iPhone</span></h1>
+      <p class="lead" data-i18n="hero_lead">A Core ML matting engine with Metal GPU post-processing delivers hair-level precision — while your photos never leave your device. No cloud. No uploads. No accounts.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="hero_cta1">下载 App</a>
-        <a class="btn btn-ghost" href="#features" data-i18n="hero_cta2">了解功能 ↓</a>
+        <a class="btn btn-primary" href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="hero_cta1">Download Free</a>
+        <a class="btn btn-ghost" href="#features" data-i18n="hero_cta2">Explore Features ↓</a>
       </div>
       <div class="trust">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><b data-i18n="trust1">无数据上传</b></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg><b data-i18n="trust2">完全离线可用</b></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><b data-i18n="trust3">无需注册账号</b></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><b data-i18n="trust1">Zero data uploads</b></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg><b data-i18n="trust2">Works fully offline</b></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><b data-i18n="trust3">No account needed</b></span>
       </div>
       <div><a class="ph-badge" style="margin-top:26px" href="https://www.producthunt.com/products/cutano-ai-cutout?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-cutano-ai-cutout" target="_blank" rel="noopener noreferrer"><img alt="Cutano - AI Cutout on Product Hunt" width="200" height="43" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1306700&amp;theme=dark&amp;t=1793977002750"></a></div>
-      <div><span class="promo" data-i18n-html="promo"><i></i><span>永久会员限时特惠 <b>$0.99</b>，仅一周</span></span>
-        <div class="promo-note" data-i18n="promo_note">价格按 App Store 商店地区与税率自动换算，以下载页显示为准。</div></div>
+      <div><span class="promo" data-i18n-html="promo"><i></i><span>Lifetime access for&nbsp;<b>$0.99</b>&nbsp;— one week only</span></span>
+        <div class="promo-note" data-i18n="promo_note">Final price follows your App Store region and local taxes, as shown at checkout.</div></div>
     </div>
     <div class="phone" data-reveal>
       <div class="screen">
-        <img id="hero-shot" src="shots/shot-cn.jpg" alt="Cutano 抠图完成界面 · Cutano cutout result screen">
+        <img id="hero-shot" src="shots/shot-en.jpg" alt="Cutano cutout result screen">
       </div>
     </div>
   </div>
@@ -235,57 +241,57 @@ footer .flinks a:hover{color:var(--orange)}
 <section id="features">
   <div class="wrap">
     <div data-reveal>
-      <span class="eyebrow" data-i18n="feat_eyebrow">核心能力</span>
-      <h2 class="sec-title" data-i18n="feat_title">不止是抠图，是一套完整的本地图像工作台</h2>
-      <p class="sec-sub" data-i18n="feat_sub">从发丝级蒙版到多层合成、从模型微调到 AI 光影——全部在设备端运行。</p>
+      <span class="eyebrow" data-i18n="feat_eyebrow">Capabilities</span>
+      <h2 class="sec-title" data-i18n="feat_title">More than cutout — a complete on-device image workbench</h2>
+      <p class="sec-sub" data-i18n="feat_sub">From hair-level masks to multi-layer compositing, model fine-tuning and AI lighting — everything runs locally.</p>
     </div>
     <div class="feat-grid">
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 20 20M20 4 8.5 15.5"/></svg></div>
-        <h3 data-i18n="f1_t">发丝级 AI 抠图引擎</h3>
-        <p data-i18n="f1_d">基于 Core ML 的本地分割模型 + Metal GPU 蒙版精细化，边缘收缩、羽化等参数实时可调；擦除/保留画笔非破坏性精修，随时撤销。</p>
+        <h3 data-i18n="f1_t">Hair-level AI Matting</h3>
+        <p data-i18n="f1_d">On-device Core ML segmentation plus Metal GPU mask refinement. Live edge contraction &amp; feathering, non-destructive erase/restore brushes with full undo.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M7.5 7.5 4 4M16.5 7.5 20 4M7.5 16.5 4 20M16.5 16.5 20 20"/></svg></div>
-        <h3 data-i18n="f2_t">多模型切换</h3>
-        <p data-i18n="f2_d">精细人像、通用分割等多套本地模型一键切换，对选中对象原位重抠；设备智能分级与超时自动降级，稳定不翻车。</p>
+        <h3 data-i18n="f2_t">Swappable AI Models</h3>
+        <p data-i18n="f2_d">Switch between portrait, general and edge-refined matting models and re-matte any object in place. Smart device tiering with automatic timeout fallback.</p>
       </div>
       <div class="card hot" data-reveal>
         <span class="tag" data-i18n="tag_pro">PRO</span>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div>
-        <h3 data-i18n="f3_t">图层管理</h3>
-        <p data-i18n="f3_d">文字与抠图对象统一图层模型，像设计工具一样上移/下移、选中、删除；任意层序下预览与导出所见即所得。</p>
+        <h3 data-i18n="f3_t">Layer Management</h3>
+        <p data-i18n="f3_d">A unified layer model of text and cutout objects — reorder, select and delete like a design tool. What you preview is exactly what you export, at any layer order.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="12" height="12" rx="2"/><rect x="12" y="12" width="9" height="9" rx="2"/><path d="M18 3h3v3M3 18v3h3"/></svg></div>
-        <h3 data-i18n="f4_t">多次抠图编辑</h3>
-        <p data-i18n="f4_d">一张画布反复添加抠图对象，独立拖动、双指缩放、旋转与镜像；每次编辑都可回溯，原子化撤销不丢步骤。</p>
+        <h3 data-i18n="f4_t">Iterative Multi-cutout Editing</h3>
+        <p data-i18n="f4_d">Keep cutting out on one canvas: add multiple subjects, each independently draggable, pinch-scalable, rotatable and flippable. Atomic undo never loses a step.</p>
       </div>
       <div class="card hot" data-reveal>
         <span class="tag" data-i18n="tag_ai">AI</span>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/></svg></div>
-        <h3 data-i18n="f5_t">AI 阴影 &amp; 地面倒影</h3>
-        <p data-i18n="f5_d">Metal 实时渲染接触阴影、阴影模糊与地面倒影渐变衰减；主体自然&ldquo;落地&rdquo;，商品图质感即刻提升。</p>
+        <h3 data-i18n="f5_t">AI Shadow &amp; Reflection</h3>
+        <p data-i18n="f5_d">Real-time Metal-rendered contact shadows, blur and gradient-faded floor reflections ground every subject naturally — product shots that look studio-lit.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="14" height="12" rx="2"/><path d="M16 11h4a2 2 0 0 1 2 2v7h-6"/><path d="M6 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-        <h3 data-i18n="f6_t">批量处理</h3>
-        <p data-i18n="f6_d">整组照片一键批量抠图，自动分级调度、失败单独重试；透明 PNG、分层 PSD、高清 JPG 多格式导出。</p>
+        <h3 data-i18n="f6_t">Batch Processing</h3>
+        <p data-i18n="f6_d">Mat an entire album in one go with tiered scheduling and per-item retry. Export transparent PNG, layered PSD or high-res JPG.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 21v-8"/></svg></div>
-        <h3 data-i18n="f7_t">商品展示图</h3>
-        <p data-i18n="f7_d">选择商品照片一键抠图，换背景色、按平台尺寸出图；双指缩放、拖动摆位、双击复位，电商主图直接保存相册。</p>
+        <h3 data-i18n="f7_t">Product Showcase</h3>
+        <p data-i18n="f7_d">Drop in a product photo, auto-cutout, recolor the background and export at platform-ready sizes. Pinch-zoom, drag to place, double-tap to reset — main images go straight to your library.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg></div>
-        <h3 data-i18n="f8_t">裁剪与画布尺寸</h3>
-        <p data-i18n="f8_d">自由裁剪、网格参考与一键智能裁剪（自动贴合透明主体）；画布支持自定义尺寸与原图/1:1/9:16/16:9，以及电商主图、海报、抖音背景等预设比例。</p>
+        <h3 data-i18n="f8_t">Crop &amp; Canvas Size</h3>
+        <p data-i18n="f8_d">Free-form crop with grid guides and one-tap smart crop that auto-fits the transparent subject. Canvas supports custom sizes plus original / 1:1 / 9:16 / 16:9 and presets like e-commerce hero, poster and Douyin backgrounds.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></div>
-        <h3 data-i18n="f9_t">添加文字·图文混合编辑</h3>
-        <p data-i18n="f9_d">为画面添加文字，颜色、透明度、字号与字体实时可调；文字作为独立图层可与抠图对象任意上下叠放，图文混排所见即所得。</p>
+        <h3 data-i18n="f9_t">Text &amp; Mixed Image-Text Editing</h3>
+        <p data-i18n="f9_d">Add text with live color, opacity, size and font controls. Text lives as its own layer that can sit above or below any cutout object — true what-you-see-is-what-you-export layouts.</p>
       </div>
     </div>
   </div>
@@ -303,14 +309,14 @@ footer .flinks a:hover{color:var(--orange)}
       </svg>
     </div>
     <div data-reveal>
-      <span class="eyebrow" data-i18n="priv_eyebrow">隐私优先</span>
-      <h2 class="sec-title" data-i18n="priv_title">你的照片，连我们的服务器都没见过</h2>
+      <span class="eyebrow" data-i18n="priv_eyebrow">Privacy First</span>
+      <h2 class="sec-title" data-i18n="priv_title">Your photos have never seen our servers — because there are none</h2>
       <div class="priv-list">
-        <div class="priv-item"><span class="n">1</span><div><h4 data-i18n="p1_t">100% 设备端推理</h4><p data-i18n="p1_d">AI 模型直接运行在你的 iPhone 上，App 内没有任何图像上传通道。</p></div></div>
-        <div class="priv-item"><span class="n">2</span><div><h4 data-i18n="p2_t">无账号 · 无云端 · 无追踪</h4><p data-i18n="p2_d">不要求注册，不接入分析 SDK，不读取相册权限之外的任何数据。</p></div></div>
-        <div class="priv-item"><span class="n">3</span><div><h4 data-i18n="p3_t">离线可用</h4><p data-i18n="p3_d">飞机上、保密办公环境、无网场景——所有功能照常工作。</p></div></div>
+        <div class="priv-item"><span class="n">1</span><div><h4 data-i18n="p1_t">100% on-device inference</h4><p data-i18n="p1_d">The AI models run directly on your iPhone. There is no upload path for images anywhere in the app.</p></div></div>
+        <div class="priv-item"><span class="n">2</span><div><h4 data-i18n="p2_t">No accounts · No cloud · No tracking</h4><p data-i18n="p2_d">No sign-up required, no analytics SDKs, and no data beyond the photo library you explicitly grant.</p></div></div>
+        <div class="priv-item"><span class="n">3</span><div><h4 data-i18n="p3_t">Works offline</h4><p data-i18n="p3_d">On a plane, in a secure office, with no connection — every feature works exactly the same.</p></div></div>
       </div>
-      <div class="priv-quote"><b data-i18n="pq_b">隐私不是付费解锁的卖点，而是架构本身。</b><span data-i18n="pq_s"> 免费用户与会员享有完全相同的数据隔离。</span></div>
+      <div class="priv-quote"><b data-i18n="pq_b">Privacy isn't a paid feature — it's the architecture.</b><span data-i18n="pq_s"> Free users and subscribers enjoy the exact same data isolation.</span></div>
     </div>
   </div>
 </section>
@@ -319,16 +325,16 @@ footer .flinks a:hover{color:var(--orange)}
 <section id="tech">
   <div class="wrap">
     <div data-reveal>
-      <span class="eyebrow" data-i18n="tech_eyebrow">技术底座</span>
-      <h2 class="sec-title" data-i18n="tech_title">本地运行，不意味着妥协体验</h2>
+      <span class="eyebrow" data-i18n="tech_eyebrow">Under the hood</span>
+      <h2 class="sec-title" data-i18n="tech_title">Local doesn't mean compromised</h2>
     </div>
     <div class="tech-grid">
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t1_t">Core ML 多模型引擎</b><span data-i18n="t1_d">BiRefNet 级本地分割模型，多档画质可选</span></div></div>
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t2_t">Metal GPU 加速</b><span data-i18n="t2_d">蒙版精细化、阴影、倒影全程 GPU 渲染</span></div></div>
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t3_t">设备智能分级</b><span data-i18n="t3_d">自动匹配机型算力，超时智能降级不卡死</span></div></div>
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t4_t">所见即所得导出</b><span data-i18n="t4_d">全分辨率逐层重放，导出与预览逐像素一致</span></div></div>
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t5_t">透明 PNG / 分层 PSD</b><span data-i18n="t5_d">Alpha 通道直出，PSD 保留图层可二次编辑</span></div></div>
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t6_t">StoreKit 2 订阅</b><span data-i18n="t6_d">Apple 原生支付，支持家庭共享与恢复购买</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t1_t">Multi-model Core ML engine</b><span data-i18n="t1_d">BiRefNet-class on-device segmentation, multiple quality tiers</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t2_t">Metal GPU acceleration</b><span data-i18n="t2_d">Mask refinement, shadows and reflections rendered on GPU</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t3_t">Adaptive device tiering</b><span data-i18n="t3_d">Auto-matches your iPhone's power; graceful timeout fallback</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t4_t">WYSIWYG export</b><span data-i18n="t4_d">Full-resolution layer replay — export matches preview pixel-for-pixel</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t5_t">Transparent PNG / layered PSD</b><span data-i18n="t5_d">Alpha channel out of the box; PSD keeps editable layers</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t6_t">StoreKit 2 subscriptions</b><span data-i18n="t6_d">Native Apple payments with Family Sharing and restore</span></div></div>
     </div>
   </div>
 </section>
@@ -337,15 +343,15 @@ footer .flinks a:hover{color:var(--orange)}
 <section id="faq">
   <div class="wrap">
     <div data-reveal>
-      <span class="eyebrow" data-i18n="faq_eyebrow">常见问题</span>
-      <h2 class="sec-title" data-i18n="faq_title">你可能想问</h2>
+      <span class="eyebrow" data-i18n="faq_eyebrow">FAQ</span>
+      <h2 class="sec-title" data-i18n="faq_title">Questions, answered</h2>
     </div>
     <div class="faq-list">
-      <details data-reveal><summary data-i18n="q1">和其他 AI 抠图工具有什么不同？</summary><div class="a" data-i18n="a1">主流工具普遍把照片上传到云端服务器处理。Cutano 的 AI 模型完整打包进 App、在设备端推理，图像数据全程不出手机——效果对标云端方案，隐私是架构级保证。</div></details>
-      <details data-reveal><summary data-i18n="q2">是免费的吗？</summary><div class="a" data-i18n="a2">App 免费下载，基础抠图立即可用；高级模型、图层合成、AI 阴影等通过订阅解锁，全部走 Apple 官方 StoreKit 2 支付。</div></details>
-      <details data-reveal><summary data-i18n="q3">支持哪些设备？</summary><div class="a" data-i18n="a3">iPhone（iOS 17+），竖屏优化。App 会自动识别设备算力分级调度，老机型同样流畅。</div></details>
-      <details data-reveal><summary data-i18n="q4">&ldquo;切换模型&rdquo;有什么用？</summary><div class="a" data-i18n="a4">不同模型擅长的场景不同：人像发丝、商品硬边缘、复杂背景各有更优解。对同一对象一键换模型重抠，取最满意的结果。</div></details>
-      <details data-reveal><summary data-i18n="q5">导出图片有水印吗？</summary><div class="a" data-i18n="a5">会员导出无水印；免费用户导出带轻水印。分辨率、格式（PNG/JPG/PSD）均可选。</div></details>
+      <details data-reveal><summary data-i18n="q1">How is this different from other AI cutout tools?</summary><div class="a" data-i18n="a1">Most tools ship your photo to a cloud server. Cutano bundles the entire AI model inside the app — inference happens on your device and image data never leaves your phone. Cloud-grade results, architecture-level privacy.</div></details>
+      <details data-reveal><summary data-i18n="q2">Is it free?</summary><div class="a" data-i18n="a2">The app is free to download and basic cutout works immediately. Advanced models, layer compositing and AI shadows unlock via subscription, billed entirely through Apple's native StoreKit 2.</div></details>
+      <details data-reveal><summary data-i18n="q3">Which devices are supported?</summary><div class="a" data-i18n="a3">iPhone running iOS 17 or later. The app automatically tiers work by device capability, so older iPhones stay smooth.</div></details>
+      <details data-reveal><summary data-i18n="q4">Why would I switch models?</summary><div class="a" data-i18n="a4">Different models excel at different subjects — hair, hard product edges, complex backgrounds. Re-matte the same object with another model and keep the best result.</div></details>
+      <details data-reveal><summary data-i18n="q5">Is there a watermark?</summary><div class="a" data-i18n="a5">Subscribers export without watermarks; free exports carry a light watermark. Resolution and format (PNG/JPG/PSD) are always your choice.</div></details>
     </div>
   </div>
 </section>
@@ -354,14 +360,14 @@ footer .flinks a:hover{color:var(--orange)}
 <section id="download">
   <div class="wrap">
     <div class="cta-final" data-reveal>
-      <h2 data-i18n="cta_title">下一张完美抠图，不用上传任何照片</h2>
-      <p data-i18n="cta_sub">App Store 免费下载，30 秒完成第一张抠图。</p>
+      <h2 data-i18n="cta_title">Your next perfect cutout — without uploading a single photo</h2>
+      <p data-i18n="cta_sub">Free on the App Store. First cutout in 10 seconds.</p>
       <a class="store-badge" href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8-.18 1.18-.82 2.35.03 3.5.52.72 1.5 1.17 2.4 1.08.42-.88.16-1.72-.35-2.35.6-.72 1.6-1 2.4-.77.2 1.05-.25 2.35-.9 3.2.65 1.55 1.9 2.4 2.4 3.95-.55.35-1.15.6-1.9.6zM12.05 7.3c-.1-1.15.75-2.55 2.1-2.75.2 1.35-.9 2.6-2.1 2.75z"/></svg>
-        <span style="text-align:left"><small data-i18n="cta_badge1">下载于</small><em data-i18n="cta_badge2">App Store</em></span>
+        <span style="text-align:left"><small data-i18n="cta_badge1">Download on the</small><em data-i18n="cta_badge2">App Store</em></span>
       </a>
-      <div><span class="promo" data-i18n-html="promo"><i></i><span>永久会员限时特惠 <b>$0.99</b>，仅一周</span></span>
-        <div class="promo-note" data-i18n="promo_note">价格按 App Store 商店地区与税率自动换算，以下载页显示为准。</div></div>
+      <div><span class="promo" data-i18n-html="promo"><i></i><span>Lifetime access for&nbsp;<b>$0.99</b>&nbsp;— one week only</span></span>
+        <div class="promo-note" data-i18n="promo_note">Final price follows your App Store region and local taxes, as shown at checkout.</div></div>
       <div><a class="ph-badge" href="https://www.producthunt.com/products/cutano-ai-cutout?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-cutano-ai-cutout" target="_blank" rel="noopener noreferrer"><img alt="Cutano - AI Cutout on Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1306700&amp;theme=dark&amp;t=1793977002750"></a></div>
     </div>
   </div>
@@ -371,16 +377,13 @@ footer .flinks a:hover{color:var(--orange)}
 <section id="legal" style="padding-top:24px">
   <div class="wrap">
     <div data-reveal>
-      <span class="eyebrow" data-i18n="legal_eyebrow">法律</span>
-      <h2 class="sec-title" data-i18n="legal_title">法律条款</h2>
+      <span class="eyebrow" data-i18n="legal_eyebrow">Legal</span>
+      <h2 class="sec-title" data-i18n="legal_title">Legal</h2>
     </div>
     <div class="legal-grid">
-      <div class="legal-card" data-reveal><h3 data-i18n="lg1">隐私政策</h3><a href="privacy_cn.html" data-i18n="lg_cn1">中文版</a><a href="privacy_en.html">English</a></div>
-      <div class="legal-card" data-reveal><h3 data-i18n="lg2">用户服务协议</h3><a href="service_cn.html" data-i18n="lg_cn2">中文版</a><a href="service_en.html">English</a></div>
-    </div>
-    <div class="legal-grid" style="margin-top:16px">
-      <div class="legal-card" data-reveal><h3 data-i18n="ct_title">联系我们</h3><a href="mailto:ppdd2012@outlook.com">ppdd2012@outlook.com</a></div>
-      <div class="legal-card" data-reveal><h3 data-i18n="site_title">官方网站</h3><a href="https://cutora.cn" target="_blank" rel="noopener">cutora.cn</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="lg1">Privacy Policy</h3><a href="privacy_cn.html" data-i18n="lg_cn1">中文</a><a href="privacy_en.html">English</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="lg2">Terms of Service</h3><a href="service_cn.html" data-i18n="lg_cn2">中文</a><a href="service_en.html">English</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="ct_title">Contact</h3><a href="mailto:ppdd2012@outlook.com">ppdd2012@outlook.com</a></div>
     </div>
   </div>
 </section>
@@ -388,34 +391,19 @@ footer .flinks a:hover{color:var(--orange)}
 <footer>
   <div class="wrap">
     <div class="flinks">
-      <a href="../index.html" data-i18n="ft_home">橙子软件</a>
-      <a href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="nav_download">下载</a>
-      <a href="privacy_cn.html" data-i18n="lg1">隐私政策</a>
-      <a href="service_cn.html" data-i18n="lg2">用户协议</a>
+      <a href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="nav_download">Get the App</a>
+      <a href="privacy_cn.html" data-i18n="lg1">Privacy Policy</a>
+      <a href="service_cn.html" data-i18n="lg2">Terms of Service</a>
       <a href="privacy_en.html">Privacy Policy</a>
       <a href="service_en.html">Terms of Service</a>
     </div>
     <div style="margin:4px 0 18px"><a class="ph-badge" style="margin-top:0" href="https://www.producthunt.com/products/cutano-ai-cutout?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-cutano-ai-cutout" target="_blank" rel="noopener noreferrer"><img alt="Cutano - AI Cutout on Product Hunt" width="200" height="43" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1306700&amp;theme=dark&amp;t=1793977002750"></a></div>
-    <p data-i18n="ft_copy">© 2026 Cutano · 橙子软件 · 你的照片从不离开你的设备。</p>
+    <p data-i18n="ft_copy">© 2026 Cutano · Cutora · Your photos never leave your device.</p>
   </div>
 </footer>
 
-<!-- Structured Data (zh) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "橙子抠图 Cutano",
-  "operatingSystem": "iOS 17.0 or later",
-  "applicationCategory": "MultimediaApplication",
-  "description": "100% 本地运行的 iPhone AI 抠图应用：图层管理、多次抠图编辑、模型切换、AI 阴影与地面倒影，照片绝不上传。",
-  "url": "https://cutora.cn/cutano/",
-  "author": {"@type": "Organization", "name": "橙子软件"},
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CNY"}
-}
-</script>
-<!-- Structured Data (en, toggled by language switch) -->
-<script type="application/ld+json" id="ld-en" disabled>
+<!-- Structured Data (English default; swapped to Chinese by the language switch) -->
+<script type="application/ld+json" id="ld">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -423,7 +411,7 @@ footer .flinks a:hover{color:var(--orange)}
   "operatingSystem": "iOS 17.0 or later",
   "applicationCategory": "MultimediaApplication",
   "description": "A 100% on-device AI cutout app for iPhone: layer management, multi-cutout editing, swappable matting models, AI shadows and ground reflections. Photos never leave your device.",
-  "url": "https://cutora.cn/cutano/",
+  "url": "https://ppdd2012.github.io/cutano/",
   "author": {"@type": "Organization", "name": "Cutora"},
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
 }
@@ -436,7 +424,7 @@ const I18N = {
     hero_t1:"工作室级 AI 抠图，", hero_t2:"100% 在你的 iPhone 上完成",
     hero_lead:"Core ML 驱动的抠图引擎与 Metal GPU 后处理，带来发丝级精度——同时你的照片从不离开设备。无云端、无上传、无账号。",
     hero_cta1:"下载 App", hero_cta2:"了解功能 ↓", trust1:"无数据上传", trust2:"完全离线可用", trust3:"无需注册账号",
-    promo:"<i></i><span>永久会员限时特惠 <b>$0.99</b>，仅一周</span>", promo_note:"价格按 App Store 商店地区与税率自动换算，以下载页显示为准。",
+    promo:"<i></i><span>永久会员限时特惠&nbsp;<b>$0.99</b>，仅一周</span>", promo_note:"价格按 App Store 商店地区与税率自动换算，以下载页显示为准。",
     feat_eyebrow:"核心能力", feat_title:"不止是抠图，是一套完整的本地图像工作台", feat_sub:"从发丝级蒙版到多层合成、从模型微调到 AI 光影——全部在设备端运行。",
     tag_pro:"PRO", tag_ai:"AI",
     f1_t:"发丝级 AI 抠图引擎", f1_d:"基于 Core ML 的本地分割模型 + Metal GPU 蒙版精细化，边缘收缩、羽化等参数实时可调；擦除/保留画笔非破坏性精修，随时撤销。",
@@ -467,15 +455,15 @@ const I18N = {
     q4:"\u201c切换模型\u201d有什么用？", a4:"不同模型擅长的场景不同：人像发丝、商品硬边缘、复杂背景各有更优解。对同一对象一键换模型重抠，取最满意的结果。",
     q5:"导出图片有水印吗？", a5:"会员导出无水印；免费用户导出带轻水印。分辨率、格式（PNG/JPG/PSD）均可选。",
     cta_title:"下一张完美抠图，不用上传任何照片", cta_sub:"App Store 免费下载，30 秒完成第一张抠图。", cta_badge1:"下载于", cta_badge2:"App Store",
-    legal_eyebrow:"法律", legal_title:"法律条款", lg1:"隐私政策", lg2:"用户服务协议", lg_cn1:"中文版", lg_cn2:"中文版", ct_title:"联系我们", site_title:"官方网站",
-    ft_home:"橙子软件", ft_copy:"© 2026 Cutano · 橙子软件 · 你的照片从不离开你的设备。"
+    legal_eyebrow:"法律", legal_title:"法律条款", lg1:"隐私政策", lg2:"用户服务协议", lg_cn1:"中文版", lg_cn2:"中文版", ct_title:"联系我们",
+    ft_copy:"© 2026 Cutano · 橙子软件 · 你的照片从不离开你的设备。"
   },
   en: {
     brand_cn:"", nav_features:"Features", nav_privacy:"Privacy", nav_tech:"Tech", nav_faq:"FAQ", nav_legal:"Legal", nav_download:"Get the App",
     hero_t1:"Studio-grade AI cutout,", hero_t2:"100% on your iPhone",
     hero_lead:"A Core ML matting engine with Metal GPU post-processing delivers hair-level precision — while your photos never leave your device. No cloud. No uploads. No accounts.",
     hero_cta1:"Download Free", hero_cta2:"Explore Features ↓", trust1:"Zero data uploads", trust2:"Works fully offline", trust3:"No account needed",
-    promo:"<i></i><span>Lifetime access for <b>$0.99</b> — one week only</span>", promo_note:"Final price follows your App Store region and local taxes, as shown at checkout.",
+    promo:"<i></i><span>Lifetime access for&nbsp;<b>$0.99</b>&nbsp;— one week only</span>", promo_note:"Final price follows your App Store region and local taxes, as shown at checkout.",
     feat_eyebrow:"Capabilities", feat_title:"More than cutout — a complete on-device image workbench", feat_sub:"From hair-level masks to multi-layer compositing, model fine-tuning and AI lighting — everything runs locally.",
     tag_pro:"PRO", tag_ai:"AI",
     f1_t:"Hair-level AI Matting", f1_d:"On-device Core ML segmentation plus Metal GPU mask refinement. Live edge contraction & feathering, non-destructive erase/restore brushes with full undo.",
@@ -505,22 +493,38 @@ const I18N = {
     q3:"Which devices are supported?", a3:"iPhone running iOS 17 or later. The app automatically tiers work by device capability, so older iPhones stay smooth.",
     q4:"Why would I switch models?", a4:"Different models excel at different subjects — hair, hard product edges, complex backgrounds. Re-matte the same object with another model and keep the best result.",
     q5:"Is there a watermark?", a5:"Subscribers export without watermarks; free exports carry a light watermark. Resolution and format (PNG/JPG/PSD) are always your choice.",
-    cta_title:"Your next perfect cutout — without uploading a single photo", cta_sub:"Free on the App Store. First cutout in 30 seconds.", cta_badge1:"Download on the", cta_badge2:"App Store",
-    legal_eyebrow:"Legal", legal_title:"Legal", lg1:"Privacy Policy", lg2:"Terms of Service", lg_cn1:"中文", lg_cn2:"中文", ct_title:"Contact", site_title:"Website",
-    ft_home:"Cutora 橙子软件", ft_copy:"© 2026 Cutano · Cutora · Your photos never leave your device."
+    cta_title:"Your next perfect cutout — without uploading a single photo", cta_sub:"Free on the App Store. First cutout in 10 seconds.", cta_badge1:"Download on the", cta_badge2:"App Store",
+    legal_eyebrow:"Legal", legal_title:"Legal", lg1:"Privacy Policy", lg2:"Terms of Service", lg_cn1:"中文", lg_cn2:"中文", ct_title:"Contact",
+    ft_copy:"© 2026 Cutano · Cutora · Your photos never leave your device."
   }
 };
 let curLang = 'en';
 try { curLang = localStorage.getItem('cutano_lang') || 'en'; } catch(e){}
 
-// store original zh values once
-const zhOriginals = new Map();
-document.querySelectorAll('title, [data-i18n], [data-i18n-html]').forEach(el => {
-  zhOriginals.set(el, el.innerHTML);
+// English is the static default; capture it once so switching back restores it.
+const enTitle = document.title;
+const ldEl = document.getElementById('ld');
+const LD_EN = ldEl.textContent;
+const LD_ZH = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "橙子抠图 Cutano",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "MultimediaApplication",
+  "description": "100% 本地运行的 iPhone AI 抠图应用：图层管理、多次抠图编辑、模型切换、AI 阴影与地面倒影，照片绝不上传。",
+  "url": "https://ppdd2012.github.io/cutano/",
+  "author": {"@type": "Organization", "name": "橙子软件"},
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CNY"}
 });
-const metaDesc = document.querySelector('meta[name="description"]');
-const ogT = document.querySelector('meta[property="og:title"]');
-const ogD = document.querySelector('meta[property="og:description"]');
+const metaSwap = [
+  'meta[name="description"]',
+  'meta[property="og:title"]',
+  'meta[property="og:description"]',
+  'meta[property="og:site_name"]',
+  'meta[property="og:locale"]',
+  'meta[name="twitter:title"]',
+  'meta[name="twitter:description"]'
+];
 
 function applyLang(lang){
   curLang = lang;
@@ -539,19 +543,12 @@ function applyLang(lang){
     const k = el.getAttribute('data-i18n-html');
     if (dict[k] != null) el.innerHTML = dict[k];
   });
-  if (lang === 'en'){
-    document.title = "Cutano — 100% On-Device AI Cutout for iPhone";
-    metaDesc.setAttribute('content', metaDesc.getAttribute('data-en'));
-    ogT.setAttribute('content', ogT.getAttribute('data-en'));
-    ogD.setAttribute('content', ogD.getAttribute('data-en'));
-    document.getElementById('ld-en').removeAttribute('disabled');
-  } else {
-    document.title = "橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机";
-    metaDesc.setAttribute('content', "橙子抠图 (Cutano) 是一款 100% 本地运行的 iPhone AI 抠图应用。Core ML + Metal GPU 带来发丝级精细抠图，并具备图层管理、多次抠图编辑、AI 阴影倒影等工作室级后期能力——照片绝不上传任何服务器。");
-    ogT.setAttribute('content', "橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机");
-    ogD.setAttribute('content', "在你 iPhone 上 100% 本地运行的发丝级 AI 抠图。精细发丝抠图 + 工作室级后期工作流——图层管理、AI 阴影、分层 PSD 导出——照片绝不上传任何服务器，隐私由架构保证。");
-    document.getElementById('ld-en').setAttribute('disabled','');
-  }
+  document.title = lang === 'zh' ? document.querySelector('title').getAttribute('data-zh') : enTitle;
+  metaSwap.forEach(sel => {
+    const el = document.querySelector(sel);
+    if (el) el.setAttribute('content', el.getAttribute(lang === 'zh' ? 'data-zh' : 'data-en'));
+  });
+  ldEl.textContent = lang === 'zh' ? LD_ZH : LD_EN;
 }
 function setLang(lang){ applyLang(lang); }
 applyLang(curLang);
