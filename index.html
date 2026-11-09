@@ -381,8 +381,8 @@ footer .flinks a:hover{color:var(--orange)}
       <h2 class="sec-title" data-i18n="legal_title">Legal</h2>
     </div>
     <div class="legal-grid">
-      <div class="legal-card" data-reveal><h3 data-i18n="lg1">Privacy Policy</h3><a href="privacy_cn.html" data-i18n="lg_cn1">中文</a><a href="privacy_en.html">English</a></div>
-      <div class="legal-card" data-reveal><h3 data-i18n="lg2">Terms of Service</h3><a href="service_cn.html" data-i18n="lg_cn2">中文</a><a href="service_en.html">English</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="lg1">Privacy Policy</h3><a href="privacy_cn.html" data-i18n="lg_cn1" data-lang="zh" hidden>中文</a><a href="privacy_en.html" data-lang="en">English</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="lg2">Terms of Service</h3><a href="service_cn.html" data-i18n="lg_cn2" data-lang="zh" hidden>中文</a><a href="service_en.html" data-lang="en">English</a></div>
       <div class="legal-card" data-reveal><h3 data-i18n="ct_title">Contact</h3><a href="mailto:ppdd2012@outlook.com">ppdd2012@outlook.com</a></div>
     </div>
   </div>
@@ -392,13 +392,13 @@ footer .flinks a:hover{color:var(--orange)}
   <div class="wrap">
     <div class="flinks">
       <a href="https://apps.apple.com/app/id6797933216" target="_blank" rel="noopener" data-i18n="nav_download">Get the App</a>
-      <a href="privacy_cn.html" data-i18n="lg1">Privacy Policy</a>
-      <a href="service_cn.html" data-i18n="lg2">Terms of Service</a>
-      <a href="privacy_en.html">Privacy Policy</a>
-      <a href="service_en.html">Terms of Service</a>
+      <a href="privacy_cn.html" data-i18n="lg1" data-lang="zh" hidden>Privacy Policy</a>
+      <a href="service_cn.html" data-i18n="lg2" data-lang="zh" hidden>Terms of Service</a>
+      <a href="privacy_en.html" data-lang="en">Privacy Policy</a>
+      <a href="service_en.html" data-lang="en">Terms of Service</a>
     </div>
     <div style="margin:4px 0 18px"><a class="ph-badge" style="margin-top:0" href="https://www.producthunt.com/products/cutano-ai-cutout?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-cutano-ai-cutout" target="_blank" rel="noopener noreferrer"><img alt="Cutano - AI Cutout on Product Hunt" width="200" height="43" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1306700&amp;theme=dark&amp;t=1793977002750"></a></div>
-    <p data-i18n="ft_copy">© 2026 Cutano · Cutora · Your photos never leave your device.</p>
+    <p data-i18n="ft_copy">© 2026 Cutano · Your photos never leave your device.</p>
   </div>
 </footer>
 
@@ -412,7 +412,7 @@ footer .flinks a:hover{color:var(--orange)}
   "applicationCategory": "MultimediaApplication",
   "description": "A 100% on-device AI cutout app for iPhone: layer management, multi-cutout editing, swappable matting models, AI shadows and ground reflections. Photos never leave your device.",
   "url": "https://ppdd2012.github.io/cutano/",
-  "author": {"@type": "Organization", "name": "Cutora"},
+  "author": {"@type": "Organization", "name": "ppdd2012"},
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
 }
 </script>
@@ -495,7 +495,7 @@ const I18N = {
     q5:"Is there a watermark?", a5:"Subscribers export without watermarks; free exports carry a light watermark. Resolution and format (PNG/JPG/PSD) are always your choice.",
     cta_title:"Your next perfect cutout — without uploading a single photo", cta_sub:"Free on the App Store. First cutout in 10 seconds.", cta_badge1:"Download on the", cta_badge2:"App Store",
     legal_eyebrow:"Legal", legal_title:"Legal", lg1:"Privacy Policy", lg2:"Terms of Service", lg_cn1:"中文", lg_cn2:"中文", ct_title:"Contact",
-    ft_copy:"© 2026 Cutano · Cutora · Your photos never leave your device."
+    ft_copy:"© 2026 Cutano · Your photos never leave your device."
   }
 };
 let curLang = 'en';
@@ -542,6 +542,9 @@ function applyLang(lang){
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const k = el.getAttribute('data-i18n-html');
     if (dict[k] != null) el.innerHTML = dict[k];
+  });
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.hidden = el.getAttribute('data-lang') !== lang;
   });
   document.title = lang === 'zh' ? document.querySelector('title').getAttribute('data-zh') : enTitle;
   metaSwap.forEach(sel => {
