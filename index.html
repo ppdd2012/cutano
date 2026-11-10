@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-zh="橙子抠图 Cutano — 100% 本地 AI 抠图 · 照片绝不离开手机">Cutano — 100% On-Device AI Cutout for iPhone</title>
 <link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="preload" as="image" href="shots/shot-en.webp" type="image/webp" fetchpriority="high">
 <meta name="description" data-en="Cutano is a 100% on-device AI cutout app for iPhone. Fine-strand, hair-level matting powered by Core ML + Metal GPU, with a studio-grade workflow — layers, multi-cutout editing, AI shadows &amp; reflections. Your photos are never uploaded to any server." data-zh="橙子抠图 (Cutano) 是一款 100% 本地运行的 iPhone AI 抠图应用。Core ML + Metal GPU 带来发丝级精细抠图，并具备图层管理、多次抠图编辑、AI 阴影倒影等工作室级后期能力——照片绝不上传任何服务器。" content="Cutano is a 100% on-device AI cutout app for iPhone. Fine-strand, hair-level matting powered by Core ML + Metal GPU, with a studio-grade workflow — layers, multi-cutout editing, AI shadows &amp; reflections. Your photos are never uploaded to any server.">
 <meta name="keywords" content="Cutano,AI cutout,photo cutout,on-device matting,iOS cutout app,Core ML,background removal,hair matting,layer management,PSD export,privacy">
 <meta name="author" content="Cutano">
@@ -91,6 +92,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:saturate(1.6
 /* 宽高比放在屏幕上而非机身：机身有 padding+border，比例套在机身上会让内容区比截图更窄，cover 便裁掉左右边缘 */
 .screen{width:100%;aspect-ratio:1320/2868;border-radius:36px;overflow:hidden;background:#f2f2f7;position:relative}
 .screen img{width:100%;height:100%;object-fit:cover;display:block}
+.screen picture{display:block;width:100%;height:100%}
 
 /* ── Features ── */
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
@@ -198,6 +200,7 @@ footer .flinks a:hover{color:var(--orange)}
       <a href="#privacy" data-i18n="nav_privacy">Privacy</a>
       <a href="#tech" data-i18n="nav_tech">Tech</a>
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#guides" data-i18n="nav_guides">Guides</a>
       <a href="#legal" data-i18n="nav_legal">Legal</a>
     </div>
     <div class="nav-cta">
@@ -209,6 +212,8 @@ footer .flinks a:hover{color:var(--orange)}
     </div>
   </div>
 </nav>
+
+<main>
 
 <!-- ═══════════ Hero ═══════════ -->
 <header class="hero">
@@ -231,7 +236,7 @@ footer .flinks a:hover{color:var(--orange)}
     </div>
     <div class="phone" data-reveal>
       <div class="screen">
-        <img id="hero-shot" src="shots/shot-en.jpg" alt="Cutano cutout result screen">
+        <picture><source id="hero-shot-webp" type="image/webp" srcset="shots/shot-en.webp"><img id="hero-shot" src="shots/shot-en.jpg" alt="Cutano cutout result screen" width="1056" height="2294" fetchpriority="high" decoding="async"></picture>
       </div>
     </div>
   </div>
@@ -276,7 +281,7 @@ footer .flinks a:hover{color:var(--orange)}
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="14" height="12" rx="2"/><path d="M16 11h4a2 2 0 0 1 2 2v7h-6"/><path d="M6 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         <h3 data-i18n="f6_t">Batch Processing</h3>
-        <p data-i18n="f6_d">Mat an entire album in one go with tiered scheduling and per-item retry. Export transparent PNG, layered PSD or high-res JPG.</p>
+        <p data-i18n="f6_d">Mat an entire album in one go with tiered scheduling and per-item retry. Export transparent PNG or high-res JPG; layered PSD and original resolution up to 8192px are on Pro.</p>
       </div>
       <div class="card" data-reveal>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="m3 8 9 5 9-5M12 21v-8"/></svg></div>
@@ -332,7 +337,7 @@ footer .flinks a:hover{color:var(--orange)}
       <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t1_t">Multi-model Core ML engine</b><span data-i18n="t1_d">BiRefNet-class on-device segmentation, multiple quality tiers</span></div></div>
       <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t2_t">Metal GPU acceleration</b><span data-i18n="t2_d">Mask refinement, shadows and reflections rendered on GPU</span></div></div>
       <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t3_t">Adaptive device tiering</b><span data-i18n="t3_d">Auto-matches your iPhone's power; graceful timeout fallback</span></div></div>
-      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t4_t">WYSIWYG export</b><span data-i18n="t4_d">Full-resolution layer replay — export matches preview pixel-for-pixel</span></div></div>
+      <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t4_t">WYSIWYG export</b><span data-i18n="t4_d">Full-resolution layer replay on Pro — export up to 8192px, matches the preview pixel-for-pixel</span></div></div>
       <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t5_t">Transparent PNG / layered PSD</b><span data-i18n="t5_d">Alpha channel out of the box; PSD keeps editable layers</span></div></div>
       <div class="tech-item" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="#ff9f45" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b data-i18n="t6_t">StoreKit 2 subscriptions</b><span data-i18n="t6_d">Native Apple payments with Family Sharing and restore</span></div></div>
     </div>
@@ -351,7 +356,8 @@ footer .flinks a:hover{color:var(--orange)}
       <details data-reveal><summary data-i18n="q2">Is it free?</summary><div class="a" data-i18n="a2">The app is free to download and basic cutout works immediately. Advanced models, layer compositing and AI shadows unlock via subscription, billed entirely through Apple's native StoreKit 2.</div></details>
       <details data-reveal><summary data-i18n="q3">Which devices are supported?</summary><div class="a" data-i18n="a3">iPhone running iOS 17 or later. The app automatically tiers work by device capability, so older iPhones stay smooth.</div></details>
       <details data-reveal><summary data-i18n="q4">Why would I switch models?</summary><div class="a" data-i18n="a4">Different models excel at different subjects — hair, hard product edges, complex backgrounds. Re-matte the same object with another model and keep the best result.</div></details>
-      <details data-reveal><summary data-i18n="q5">Is there a watermark?</summary><div class="a" data-i18n="a5">Subscribers export without watermarks; free exports carry a light watermark. Resolution and format (PNG/JPG/PSD) are always your choice.</div></details>
+      <details data-reveal><summary data-i18n="q5">Is there a watermark?</summary><div class="a" data-i18n="a5">Standard cutout exports carry no watermark on either tier — there the difference is resolution and formats (the free tier exports at a reduced resolution; Pro unlocks original resolution up to 8192px and layered PSD). A few AI-generated or composed features, like product showcase images, do show a watermark until you're on Pro.</div></details>
+      <details data-reveal><summary data-i18n="q6">What resolution can I export at?</summary><div class="a" data-i18n="a6">Pro exports at your photo's original resolution, up to 8192px; the free tier exports at a reduced resolution. Formats: transparent PNG or JPG on every tier, layered PSD on Pro. A smaller source is never upscaled — it exports at its own size.</div></details>
     </div>
   </div>
 </section>
@@ -373,6 +379,25 @@ footer .flinks a:hover{color:var(--orange)}
   </div>
 </section>
 
+<!-- ═══════════ Guides ═══════════ -->
+<section id="guides" style="padding-top:24px">
+  <div class="wrap">
+    <div data-reveal>
+      <span class="eyebrow" data-i18n="guides_eyebrow">Guides</span>
+      <h2 class="sec-title" data-i18n="guides_title">Cutout problems, worked through</h2>
+      <p class="sec-sub" data-i18n="guides_sub">Six standalone guides on the workflows people actually search for — the numbers, the edge cases, and exactly what runs on the device.</p>
+    </div>
+    <div class="legal-grid">
+      <div class="legal-card" data-reveal><h3 data-i18n="g1_t">Cutano vs the built-in iOS cutout</h3><a href="vs-ios-cutout.html" data-i18n="g1_d">Thirteen-row feature comparison</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="g2_t">Hair &amp; fine-strand cutout</h3><a href="hair-matting.html" data-i18n="g2_d">Recover chopped flyaway edges</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="g3_t">PNG, JPG or PSD export</h3><a href="export-formats.html" data-i18n="g3_d">Which format keeps transparency</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="g4_t">White-background product photos</h3><a href="product-photos.html" data-i18n="g4_d">Listing images without a studio</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="g5_t">Print-ready sticker cut-outs</h3><a href="sticker-print.html" data-i18n="g5_d">Transparent PNG sized for print</a></div>
+      <div class="legal-card" data-reveal><h3 data-i18n="g6_t">Offline background removal</h3><a href="offline-editing.html" data-i18n="g6_d">No connection, no upload</a></div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════ Legal ═══════════ -->
 <section id="legal" style="padding-top:24px">
   <div class="wrap">
@@ -387,6 +412,7 @@ footer .flinks a:hover{color:var(--orange)}
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
@@ -420,7 +446,7 @@ footer .flinks a:hover{color:var(--orange)}
 <script>
 const I18N = {
   zh: {
-    brand_cn:"橙子抠图", nav_features:"功能", nav_privacy:"隐私", nav_tech:"技术", nav_faq:"常见问题", nav_legal:"法律条款", nav_download:"下载",
+    brand_cn:"橙子抠图", nav_features:"功能", nav_privacy:"隐私", nav_tech:"技术", nav_faq:"常见问题", nav_guides:"指南", nav_legal:"法律条款", nav_download:"下载",
     hero_t1:"工作室级 AI 抠图，", hero_t2:"100% 在你的 iPhone 上完成",
     hero_lead:"Core ML 驱动的抠图引擎与 Metal GPU 后处理，带来发丝级精度——同时你的照片从不离开设备。无云端、无上传、无账号。",
     hero_cta1:"下载 App", hero_cta2:"了解功能 ↓", trust1:"无数据上传", trust2:"完全离线可用", trust3:"无需注册账号",
@@ -432,7 +458,7 @@ const I18N = {
     f3_t:"图层管理", f3_d:"文字与抠图对象统一图层模型，像设计工具一样上移/下移、选中、删除；任意层序下预览与导出所见即所得。",
     f4_t:"多次抠图编辑", f4_d:"一张画布反复添加抠图对象，独立拖动、双指缩放、旋转与镜像；每次编辑都可回溯，原子化撤销不丢步骤。",
     f5_t:"AI 阴影 & 地面倒影", f5_d:"Metal 实时渲染接触阴影、阴影模糊与地面倒影渐变衰减；主体自然\u201c落地\u201d，商品图质感即刻提升。",
-    f6_t:"批量处理", f6_d:"整组照片一键批量抠图，自动分级调度、失败单独重试；透明 PNG、分层 PSD、高清 JPG 多格式导出。",
+    f6_t:"批量处理", f6_d:"整组照片一键批量抠图，自动分级调度、失败单独重试；透明 PNG、高清 JPG 多格式导出，分层 PSD 与原分辨率最大 8192px 为 Pro 功能。",
     f7_t:"商品展示图", f7_d:"选择商品照片一键抠图，换背景色、按平台尺寸出图；双指缩放、拖动摆位、双击复位，电商主图直接保存相册。",
     f8_t:"裁剪与画布尺寸", f8_d:"自由裁剪、网格参考与一键智能裁剪（自动贴合透明主体）；画布支持自定义尺寸与原图/1:1/9:16/16:9，以及电商主图、海报、抖音背景等预设比例。",
     f9_t:"添加文字·图文混合编辑", f9_d:"为画面添加文字，颜色、透明度、字号与字体实时可调；文字作为独立图层可与抠图对象任意上下叠放，图文混排所见即所得。",
@@ -445,7 +471,7 @@ const I18N = {
     t1_t:"Core ML 多模型引擎", t1_d:"BiRefNet 级本地分割模型，多档画质可选",
     t2_t:"Metal GPU 加速", t2_d:"蒙版精细化、阴影、倒影全程 GPU 渲染",
     t3_t:"设备智能分级", t3_d:"自动匹配机型算力，超时智能降级不卡死",
-    t4_t:"所见即所得导出", t4_d:"全分辨率逐层重放，导出与预览逐像素一致",
+    t4_t:"所见即所得导出", t4_d:"Pro 全分辨率逐层重放，导出最大支持 8192px，与预览逐像素一致",
     t5_t:"透明 PNG / 分层 PSD", t5_d:"Alpha 通道直出，PSD 保留图层可二次编辑",
     t6_t:"StoreKit 2 订阅", t6_d:"Apple 原生支付，支持家庭共享与恢复购买",
     faq_eyebrow:"常见问题", faq_title:"你可能想问",
@@ -453,13 +479,21 @@ const I18N = {
     q2:"是免费的吗？", a2:"App 免费下载，基础抠图立即可用；高级模型、图层合成、AI 阴影等通过订阅解锁，全部走 Apple 官方 StoreKit 2 支付。",
     q3:"支持哪些设备？", a3:"iPhone（iOS 17+），竖屏优化。App 会自动识别设备算力分级调度，老机型同样流畅。",
     q4:"\u201c切换模型\u201d有什么用？", a4:"不同模型擅长的场景不同：人像发丝、商品硬边缘、复杂背景各有更优解。对同一对象一键换模型重抠，取最满意的结果。",
-    q5:"导出图片有水印吗？", a5:"会员导出无水印；免费用户导出带轻水印。分辨率、格式（PNG/JPG/PSD）均可选。",
+    q5:"导出图片有水印吗？", a5:"普通抠图导出两档都不加水印，那里的差别是分辨率与格式：免费档以较低分辨率导出，Pro 解锁原分辨率（最大 8192px）与分层 PSD。少数 AI 生成／合成类功能（如商品展示图）在升级到 Pro 前会带水印。",
+    q6:"可以导出多高分辨率？", a6:"Pro 按照片原始分辨率导出，最大 8192px；免费档以较低分辨率导出。格式：所有档位可选透明 PNG 或 JPG，分层 PSD 为 Pro 功能。小图不会被放大——按自身尺寸导出。",
     cta_title:"下一张完美抠图，不用上传任何照片", cta_sub:"App Store 免费下载，30 秒完成第一张抠图。", cta_badge1:"下载于", cta_badge2:"App Store",
+    guides_eyebrow:"指南", guides_title:"把抠图难题一次讲透", guides_sub:"六篇独立教程，覆盖大家真正会去搜的工作流——具体数值、容易翻车的边界情况，以及设备端到底能做什么。目前教程仅提供英文。",
+    g1_t:"Cutano 对比 iOS 自带抠图", g1_d:"十三项逐项对比",
+    g2_t:"发丝与细碎边缘抠图", g2_d:"找回被切掉的碎发",
+    g3_t:"PNG、JPG、PSD 怎么选", g3_d:"哪种格式保留透明",
+    g4_t:"白底商品主图", g4_d:"不用影楼也能出平台图",
+    g5_t:"可印刷的贴纸抠图", g5_d:"按印刷尺寸出透明 PNG",
+    g6_t:"离线抠图，不上传", g6_d:"没网络也照常用",
     legal_eyebrow:"法律", legal_title:"法律条款", lg1:"隐私政策", lg2:"用户服务协议", lg_cn1:"中文版", lg_cn2:"中文版", ct_title:"联系我们",
     ft_copy:"© 2026 Cutano · 橙子软件 · 你的照片从不离开你的设备。"
   },
   en: {
-    brand_cn:"", nav_features:"Features", nav_privacy:"Privacy", nav_tech:"Tech", nav_faq:"FAQ", nav_legal:"Legal", nav_download:"Get the App",
+    brand_cn:"", nav_features:"Features", nav_privacy:"Privacy", nav_tech:"Tech", nav_faq:"FAQ", nav_guides:"Guides", nav_legal:"Legal", nav_download:"Get the App",
     hero_t1:"Studio-grade AI cutout,", hero_t2:"100% on your iPhone",
     hero_lead:"A Core ML matting engine with Metal GPU post-processing delivers hair-level precision — while your photos never leave your device. No cloud. No uploads. No accounts.",
     hero_cta1:"Download Free", hero_cta2:"Explore Features ↓", trust1:"Zero data uploads", trust2:"Works fully offline", trust3:"No account needed",
@@ -471,7 +505,7 @@ const I18N = {
     f3_t:"Layer Management", f3_d:"A unified layer model of text and cutout objects — reorder, select and delete like a design tool. What you preview is exactly what you export, at any layer order.",
     f4_t:"Iterative Multi-cutout Editing", f4_d:"Keep cutting out on one canvas: add multiple subjects, each independently draggable, pinch-scalable, rotatable and flippable. Atomic undo never loses a step.",
     f5_t:"AI Shadow & Reflection", f5_d:"Real-time Metal-rendered contact shadows, blur and gradient-faded floor reflections ground every subject naturally — product shots that look studio-lit.",
-    f6_t:"Batch Processing", f6_d:"Mat an entire album in one go with tiered scheduling and per-item retry. Export transparent PNG, layered PSD or high-res JPG.",
+    f6_t:"Batch Processing", f6_d:"Mat an entire album in one go with tiered scheduling and per-item retry. Export transparent PNG or high-res JPG; layered PSD and original resolution up to 8192px are on Pro.",
     f7_t:"Product Showcase", f7_d:"Drop in a product photo, auto-cutout, recolor the background and export at platform-ready sizes. Pinch-zoom, drag to place, double-tap to reset — main images go straight to your library.",
     f8_t:"Crop & Canvas Size", f8_d:"Free-form crop with grid guides and one-tap smart crop that auto-fits the transparent subject. Canvas supports custom sizes plus original / 1:1 / 9:16 / 16:9 and presets like e-commerce hero, poster and Douyin backgrounds.",
     f9_t:"Text & Mixed Image-Text Editing", f9_d:"Add text with live color, opacity, size and font controls. Text lives as its own layer that can sit above or below any cutout object — true what-you-see-is-what-you-export layouts.",
@@ -484,7 +518,7 @@ const I18N = {
     t1_t:"Multi-model Core ML engine", t1_d:"BiRefNet-class on-device segmentation, multiple quality tiers",
     t2_t:"Metal GPU acceleration", t2_d:"Mask refinement, shadows and reflections rendered on GPU",
     t3_t:"Adaptive device tiering", t3_d:"Auto-matches your iPhone's power; graceful timeout fallback",
-    t4_t:"WYSIWYG export", t4_d:"Full-resolution layer replay — export matches preview pixel-for-pixel",
+    t4_t:"WYSIWYG export", t4_d:"Full-resolution layer replay on Pro — export up to 8192px, matches the preview pixel-for-pixel",
     t5_t:"Transparent PNG / layered PSD", t5_d:"Alpha channel out of the box; PSD keeps editable layers",
     t6_t:"StoreKit 2 subscriptions", t6_d:"Native Apple payments with Family Sharing and restore",
     faq_eyebrow:"FAQ", faq_title:"Questions, answered",
@@ -492,8 +526,16 @@ const I18N = {
     q2:"Is it free?", a2:"The app is free to download and basic cutout works immediately. Advanced models, layer compositing and AI shadows unlock via subscription, billed entirely through Apple's native StoreKit 2.",
     q3:"Which devices are supported?", a3:"iPhone running iOS 17 or later. The app automatically tiers work by device capability, so older iPhones stay smooth.",
     q4:"Why would I switch models?", a4:"Different models excel at different subjects — hair, hard product edges, complex backgrounds. Re-matte the same object with another model and keep the best result.",
-    q5:"Is there a watermark?", a5:"Subscribers export without watermarks; free exports carry a light watermark. Resolution and format (PNG/JPG/PSD) are always your choice.",
+    q5:"Is there a watermark?", a5:"Standard cutout exports carry no watermark on either tier — there the difference is resolution and formats (the free tier exports at a reduced resolution; Pro unlocks original resolution up to 8192px and layered PSD). A few AI-generated or composed features, like product showcase images, do show a watermark until you're on Pro.",
+    q6:"What resolution can I export at?", a6:"Pro exports at your photo's original resolution, up to 8192px; the free tier exports at a reduced resolution. Formats: transparent PNG or JPG on every tier, layered PSD on Pro. A smaller source is never upscaled — it exports at its own size.",
     cta_title:"Your next perfect cutout — without uploading a single photo", cta_sub:"Free on the App Store. First cutout in 10 seconds.", cta_badge1:"Download on the", cta_badge2:"App Store",
+    guides_eyebrow:"Guides", guides_title:"Cutout problems, worked through", guides_sub:"Six standalone guides on the workflows people actually search for — the numbers, the edge cases, and exactly what runs on the device.",
+    g1_t:"Cutano vs the built-in iOS cutout", g1_d:"Thirteen-row feature comparison",
+    g2_t:"Hair & fine-strand cutout", g2_d:"Recover chopped flyaway edges",
+    g3_t:"PNG, JPG or PSD export", g3_d:"Which format keeps transparency",
+    g4_t:"White-background product photos", g4_d:"Listing images without a studio",
+    g5_t:"Print-ready sticker cut-outs", g5_d:"Transparent PNG sized for print",
+    g6_t:"Offline background removal", g6_d:"No connection, no upload",
     legal_eyebrow:"Legal", legal_title:"Legal", lg1:"Privacy Policy", lg2:"Terms of Service", lg_cn1:"中文", lg_cn2:"中文", ct_title:"Contact",
     ft_copy:"© 2026 Cutano · Your photos never leave your device."
   }
@@ -533,7 +575,10 @@ function applyLang(lang){
   document.getElementById('btn-zh').classList.toggle('on', lang === 'zh');
   document.getElementById('btn-en').classList.toggle('on', lang === 'en');
   const heroShot = document.getElementById('hero-shot');
-  if (heroShot) heroShot.src = lang === 'en' ? 'shots/shot-en.jpg' : 'shots/shot-cn.jpg';
+  const heroWebp = document.getElementById('hero-shot-webp');
+  const base = lang === 'en' ? 'shot-en' : 'shot-cn';
+  if (heroShot) heroShot.src = 'shots/' + base + '.jpg';
+  if (heroWebp) heroWebp.srcset = 'shots/' + base + '.webp';
   const dict = I18N[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const k = el.getAttribute('data-i18n');

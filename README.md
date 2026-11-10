@@ -68,7 +68,7 @@ your device. Cloud-grade results, architecture-level privacy.
 ## Pricing
 
 - **Free to download** — basic cutout works immediately.
-- **Pro** — advanced models, layer compositing and AI shadows unlock via subscription, billed entirely through Apple's native StoreKit 2. Subscribers export without watermarks; free exports carry a light watermark.
+- **Pro** — advanced models, layer compositing, AI shadows, layered PSD and original-resolution export (up to 8192px) unlock via subscription, billed entirely through Apple's native StoreKit 2. Plain cutout exports add no watermark and differ only by resolution (the free tier exports at a reduced resolution); some AI-generated or composed features, such as product showcase images, do carry a watermark until you subscribe.
 - **Launch offer (limited time)** — lifetime access for **$0.99**, one week only. Final price follows your App Store region and local taxes, as shown at checkout. See the [website](https://ppdd2012.github.io/cutano/) for current offers.
 
 ## Links
