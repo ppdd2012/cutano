@@ -4,7 +4,7 @@
 
 # Cutano - AI cutout
 
-**Studio-grade AI cutout, 100% on your iPhone.**
+**Hair-level AI cutout, 100% on your iPhone.**
 
 Your photos never leave your device — no cloud, no uploads, no accounts.
 
@@ -23,7 +23,7 @@ Your photos never leave your device — no cloud, no uploads, no accounts.
 
 Cutano is a **100% on-device AI cutout app for iPhone**. A Core ML matting engine with
 Metal GPU post-processing delivers hair-level precision — while your photos never leave
-your device. Cloud-grade results, architecture-level privacy.
+your device. Privacy enforced by the architecture, not by policy.
 
 - **Zero data uploads** — the AI models run directly on your iPhone; there is no upload path for images anywhere in the app.
 - **Works fully offline** — on a plane, in a secure office, with no connection, every feature works the same.
